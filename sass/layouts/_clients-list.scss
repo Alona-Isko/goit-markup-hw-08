@@ -1,44 +1,103 @@
 .clients__list {
-    display: flex;
-  }
-  
-  .clients__item {
-    margin-left: var(--card-set-gap);
-  
-  &:first-child {
-    margin-left: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  // margin-right: -30px;
+  // margin-top: -30px;
+  justify-content: center;
 }
-  
-  .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-  
-    border: 1px solid var(--icons-color);
-    border-radius: 4px;
-  
-    transition: border 250ms var(--animation-cubic);
-  
-  &:hover,
-  &:focus {
-    border: 1px solid var(--accent-color);
+
+// .clients__item {
+//   // margin-right: 30px;
+// }
+
+@media screen and (max-width: 479px) {
+  .clients__item {
+    flex-basis: calc((100% - 30px) / 2 );
   }
 
-  &:hover .clients__icon,
-  &:focus .clients__icon {
-    fill: var(--accent-color);
-  }
+  .clients__item :nth-child(2n) {
+    margin-right: 0;
+  } 
 }
+
+
+@media screen and (min-width: 480px) { 
+}
+
+
+.clients__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 90px;
+    
+      border: 1px solid var(--icons-color);
+      border-radius: 4px;
+    
+      transition: border 250ms var(--animation-cubic);
+    
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
   
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+      fill: var(--accent-color);
+    }
+  }
+
   .clients__icon {
     padding: auto;
     fill: var(--icons-color);
-  
+      
     transition: fill 250ms var(--animation-cubic);
   }
+
+
+
+// .clients__list {
+//     display: flex;
+//   }
+  
+//   .clients__item {
+//     margin-left: var(--card-set-gap);
+  
+//   &:first-child {
+//     margin-left: 0;
+//   }
+// }
+  
+//   .clients__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 90px;
+  
+//     border: 1px solid var(--icons-color);
+//     border-radius: 4px;
+  
+//     transition: border 250ms var(--animation-cubic);
+  
+//   &:hover,
+//   &:focus {
+//     border: 1px solid var(--accent-color);
+//   }
+
+//   &:hover .clients__icon,
+//   &:focus .clients__icon {
+//     fill: var(--accent-color);
+//   }
+// }
+  
+//   .clients__icon {
+//     padding: auto;
+//     fill: var(--icons-color);
+  
+//     transition: fill 250ms var(--animation-cubic);
+//   }
   
   
   
