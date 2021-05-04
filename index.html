@@ -443,66 +443,73 @@
     <!--Подвал-->
     <footer class="footer">
         <div class="container footer-container">
-            <div>
-                <a href="/" class="logo footer-logo" lang="en">
-                    <span class="logo__text">Web</span>Studio
-                </a>
-    
-                <address class="footer-nav">
-                    <ul class="list">
-                        <li>г. Киев, пр-т Леси Украинки, 26 </li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
+            <div class="footer-container--laptop">
+                <div class="footer-nav--laptop">
+                    <a href="/" class="logo footer-logo" lang="en">
+                        <span class="logo__text">Web</span>Studio
+                    </a>
+        
+                    <address class="footer-nav">
+                        <ul class="list">
+                            <li>г. Киев, пр-т Леси Украинки, 26 </li>
+                            <li class="footer-nav__item"><a class="footer-nav__link" href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+            
 
-            <div class="feedback list">
-                <h2 class="section__title--none">Соц сети</h2>
-                <!--Скрыть при оформлении-->
-                <h3 class="feedback__title secondary__title">Присоединяйтесь</h3>
-                <ul class="list social-icons">
-                    <li class="social-icons__item">
-                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icons__image social-icons__image--color">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icons__image social-icons__image--color">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icons__image social-icons__image--color">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                            <svg class="social-icons__image social-icons__image--color">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="feedback list">
+                    <h2 class="section__title--none">Соц сети</h2>
+                    <!--Скрыть при оформлении-->
+                    <h3 class="feedback__title secondary__title">Присоединяйтесь</h3>
+                    <ul class="list social-icons">
+                        <li class="social-icons__item">
+                            <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icons__image social-icons__image--color">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icons__image social-icons__image--color">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icons__image social-icons__image--color">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                                <svg class="social-icons__image social-icons__image--color">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="form-footer">
                 <h3 class="feedback__title secondary__title">Подпишитесь на рассылку</h3>
-                <form class="subscribe-form">                        
-                    <input type="email" name="mail-footer" class="subscribe-form__input"
-                    placeholder="E-mail"/>
-                    <button type="submit" class="button subscribe-form__button">Подписаться
-                        <svg class="subscribe-form__icon">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
+                <form class="subscribe-form">
+                    <div class="subscribe-form__field">                        
+                        <input type="email" name="mail-footer" class="subscribe-form__input"
+                        placeholder="E-mail"/>
+                    </div>
+                    <div class="subscribe-form__button--container">
+                        <button type="submit" class="button subscribe-form__button">Подписаться
+                            <svg class="subscribe-form__icon">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
                 
             </div>

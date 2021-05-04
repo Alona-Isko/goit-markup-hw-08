@@ -1,44 +1,89 @@
-    .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--background-dark-color);
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-dark-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 65px;
+    padding-bottom: 55px;
   }
+}
   
-  .footer-container {
+.footer-container {
+  @media screen and (max-width: 767.98px) {
     display: block;
     align-items: center;
     text-align: center;
   }
 
-  .footer-nav {
-    margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.footer-container--laptop {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      margin-bottom: 60px;
+      justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+
+.footer-nav {
+  margin-top: 20px;
     // white-space: nowrap;
   
-    color: var(--primary-white-color);
+  color: var(--primary-white-color);
+}
+
+.footer-nav--laptop {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+    margin-right: 165px;
+
+    align-items: center;
+    text-align: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+ 
   
-  .footer-nav,
-  .footer-nav__link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+.footer-nav,
+.footer-nav__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 
-    text-decoration: none;
-    letter-spacing: 0.03em;
-  }
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
 
-  .footer-nav__item {
-    margin-top: 8px;
+.footer-nav__item {
+  margin-top: 8px;
     
-    @media screen and (min-width:1200px) {
-      margin-top: 9px;
-    }
+  @media screen and (min-width:1200px) {
+    margin-top: 9px;
   }
+}
   
-  .footer-nav__link {  
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms var(--animation-cubic);
+.footer-nav__link {  
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--animation-cubic);
   
   &:hover,
   &:focus {
@@ -52,12 +97,3 @@
     margin-bottom: 60px;
   }
 }
-
-  
-  // .feedback {
-  //   margin-left: 85px;
-  // }
-  
-  
-  
-  
