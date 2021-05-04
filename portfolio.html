@@ -51,15 +51,56 @@
             </ul>
         </div>
         
-        <button type="button" class="mobile-menu__button is-open" data-menu-button>
+        <button type="button" 
+            class="mobile-menu__button"
+            aria-expanded="false"
+            aria-controls="mobile-menu" 
+            data-menu-button>
             <svg width="40px" height="40px"
                 aria-label="Переключатель мобильного меню">
-                    <use class="mobile-menu_icon-close" href="./images/sprite.svg#icon-mobile_close"></use>
-                    <use class="mobile-menu_icon-menu" href="./images/sprite.svg#icon-mobile_menu"></use>
+                <use class="mobile-menu_icon-menu" href="./images/sprite.svg#icon-mobile_menu"></use>
+                <use class="mobile-menu_icon-close" href="./images/sprite.svg#icon-mobile_close"></use>
             </svg>
         </button>
-
         
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+            <div class="page-nav__wrap--mobile">
+                <ul class="page-nav--mobile list">
+                    <li class="page-nav__item--mobile"><a href="./index.html" class="page-nav__link--mobile">Студия</a></li>
+                    <li class="page-nav__item--mobile"><a href="" class="page-nav__link--mobile page-nav__current--mobile">Портфолио</a></li>
+                    <li class="page-nav__item--mobile"><a href="" class="page-nav__link--mobile">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts__wrap--mobile">
+                <ul class="contacts--mobile list">
+                    <li class="contacts__item--tel">
+                        <a class="contacts__link--tel" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts__item--mail">
+                        <a class="contacts__link--mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="social-network list">
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link">Instagram</a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link">Twitter</a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link">Facebook</a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    
+            
+        </div>
     </nav>
 </header>
 
@@ -95,17 +136,17 @@
     <ul class="projects list">
         <li class="projects__item">
             <article class="card">
-            <div class="card__image">
-                <div class="overlay">
-                    <p class="overlay__content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                <div class="card__image">
+                    <div class="overlay">
+                        <p class="overlay__content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                    </div>
+                    <img src="./images/portfolio_laptop.jpg" alt="Ноутбук" width="370"/>
                 </div>
-                <img src="./images/portfolio_laptop.jpg" alt="Ноутбук" width="370"/>
-            </div>
                 <div class="card__content">
                     <h3 class="card__title">Технокряк</h3>
                     <p class="card__text">Веб-сайт</p>
                 </div>
-        </article>
+            </article>
         </li>
 
         <li class="projects__item">
@@ -233,74 +274,83 @@
 </main>
 
 <!--Подвал-->
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="container footer-container">
-        <div>
-            <a href="/" class="logo footer-logo" lang="en">
-                <span class="logo__text">Web</span>Studio
-            </a>
+        <div class="footer-container--laptop">
+            <div class="footer-nav--laptop">
+                <a href="/" class="logo footer-logo" lang="en">
+                    <span class="logo__text">Web</span>Studio
+                </a>
+    
+                <address class="footer-nav">
+                    <ul class="list">
+                        <li>г. Киев, пр-т Леси Украинки, 26 </li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        
 
-            <address class="footer-nav">
-                <ul class="list">
-                    <li>г. Киев, пр-т Леси Украинки, 26 </li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <div class="feedback list">
+                <h2 class="section__title--none">Соц сети</h2>
+                <!--Скрыть при оформлении-->
+                <h3 class="feedback__title secondary__title">Присоединяйтесь</h3>
+                <ul class="list social-icons">
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons__image social-icons__image--color">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons__image social-icons__image--color">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons__image social-icons__image--color">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons__image social-icons__image--color">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
-        </div>
-
-        <div class="feedback">
-            <h2 class="section__title--none">Соц сети</h2> -->
-            <!--Скрыть при оформлении-->
-            <!-- <h3 class="feedback__title">Присоединяйтесь</h3>
-            <ul class="list social-icons">
-                <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                        <svg class="social-icons__image social-icons__image--color">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                        <svg class="social-icons__image social-icons__image--color">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                        <svg class="social-icons__image social-icons__image--color">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--bgcolor" target="_blank" rel="noopener noreferrer">
-                        <svg class="social-icons__image social-icons__image--color">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
 
         <div class="form-footer">
-            <h3 class="feedback__title">Подпишитесь на рассылку</h3>
-            <form class="subscribe-form">                        
-                <input type="email" name="mail-footer" class="subscribe-form__input"
-                placeholder="E-mail"/>
-                <button type="submit" class="button subscribe-form__button">Подписаться
-                    <svg class="subscribe-form__icon">
-                        <use href="./images/sprite.svg#icon-send"></use>
-                    </svg>
-                </button>
+            <h3 class="feedback__title secondary__title">Подпишитесь на рассылку</h3>
+            <form class="subscribe-form">
+                <div class="subscribe-form__field">                        
+                    <input type="email" name="mail-footer" class="subscribe-form__input"
+                    placeholder="E-mail"/>
+                </div>
+                <div class="subscribe-form__button--container">
+                    <button type="submit" class="button subscribe-form__button">Подписаться
+                        <svg class="subscribe-form__icon">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
             
         </div>
 
     </div>
-</footer> -->
+</footer>
+
+<script src="./js/menu.js"></script>
 
 </body>
 

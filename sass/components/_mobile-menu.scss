@@ -1,62 +1,111 @@
 
 @media screen and (max-width: 767.98px) {
-.mobile-menu__button {
-    position: relative;
-    
-    z-index: 150;
-    display: inline-flex;
-    margin-right: 0;
-    margin-left: auto;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
+    .mobile-menu__button {        
+        z-index: 150;
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
 
-.mobile-menu {
-    display: none;
-}
+        &:hover {
+            fill: var(--accent-color);
+        }
+    }
 
-.mobile-menu_icon-menu {
-    display: block;
-}
+    .mobile-menu__button .mobile-menu_icon-close {
+        display: none;
+    }
 
-.mobile-menu_icon-close {
-    display: none;
-}
-
-// .agreement__checkbox {
-//     display: none; 
-    
-//   &:checked + .agreement__label .agreement__icon--unchecked {
-//       display: none;
-//   }
-        
-//  &:checked + .agreement__label .agreement__icon--checked {
-//     //       display: unset;
-//     //     }
-
-.is-open {
-    .mobile-menu_icon-close {
+    .mobile-menu__button.is-open .mobile-menu_icon-close {
         display: block;
     }
 
-    .mobile-menu_icon-menu {
+    .mobile-menu__button.is-open .mobile-menu_icon-menu {
         display: none;
     }
 
     .mobile-menu {
-        display: flex;
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
-    
         width: 100%;
         max-width: 480px;
         height: 100vh;
-    
+        z-index: 120;
+
         padding: 48px 40px;
-    
-        background-color: var(--primary-white-color);
+        text-align: left;
+
+        background-color: var(--primary-white-color); 
+        
+        &.is-open {
+            display: block;
+        }
+    }
+
+    .page-nav__item--mobile {
+        margin-bottom: 32px;
+    }
+
+    .page-nav__link--mobile {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        color: var(--title-text-color);
+    }
+
+    .page-nav__current--mobile {
+        color: var(--accent-color);
+    }
+
+    .contacts__wrap--mobile {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .contacts__item--tel {
+        margin-bottom: 32px;
+    }
+
+    .contacts__link--tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        color: var(--accent-color);
+    }
+
+    .contacts__link--mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        color: var(--primary-text-color);
+    }
+
+    .social-network {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-network__link {
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;    
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        
+        color: var(--accent-color);
     }
 }
 
@@ -68,80 +117,9 @@
     }
 }
 
-
-
-// .mobile-menu__overlay {
-//     width: 100%;
-//     height: 100vh;
-//     background-color: var(--primary-white-color);
-// }
-
-.page-nav__item--mobile {
-    margin-bottom: 32px;
-}
-
-.page-nav__link--mobile {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: var(--title-text-color);
-}
-
-.contacts__item--tel {
-    margin-bottom: 32px;
-}
-
-.contacts__link--tel {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: var(--accent-color);
-}
-
-.contacts__item--mail {
-    margin-bottom: 64px;
-}
-
-.contacts__link--mail {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: var(--primary-text-color);
-}
-
-.social-network {
-    display: flex;
-    // margin-bottom: 0;
-}
-
-.social-network__link {
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;    
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    
-    color: var(--accent-color);
-}
-
-}
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+    .mobile-menu__button,
     .mobile-menu {
-        display: none;
-    }
-
-    .mobile-menu__button {
         display: none;
     }
 }
