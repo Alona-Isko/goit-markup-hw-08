@@ -38,13 +38,14 @@
         padding: 48px 40px;
         text-align: left;
 
-        background-color: var(--primary-white-color); 
+        background-color: var(--primary-white-color);
+        
         
         &.is-open {
-            display: block;
+            display: block;           
         }
     }
-
+    
     .page-nav__item--mobile {
         margin-bottom: 32px;
     }
@@ -65,7 +66,11 @@
 
     .contacts__wrap--mobile {
         position: absolute;
-        bottom: 40px;
+        bottom: 48px;
+    }
+
+    .contacts--mobile {
+        margin-bottom: 64px;
     }
 
     .contacts__item--tel {
@@ -74,7 +79,7 @@
 
     .contacts__link--tel {
         font-weight: 500;
-        font-size: 34px;
+        font-size: 30px;
         line-height: 1.18;
         letter-spacing: 0.02em;
         text-decoration: none;
@@ -108,7 +113,6 @@
         color: var(--accent-color);
     }
 }
-
 
 @media screen and (max-width: 767.98px) {
     .page-nav__wrap,
