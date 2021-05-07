@@ -707,7 +707,14 @@ main {
 }
 
 .feature__title {
+  text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 
 .work-list__title {
@@ -1233,18 +1240,19 @@ main {
 }
 
 .section {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .section--position {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
 }
 
 .hero {
@@ -1264,20 +1272,20 @@ main {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero_mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
     max-width: 768px;
-    background-image: url(../images/hero/hero_tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero_tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_tablet@2x.jpg);
   }
 }
 
@@ -1287,13 +1295,13 @@ main {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/hero/hero_desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desktop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero_desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desktop@2x.jpg);
   }
 }
 
@@ -1380,7 +1388,7 @@ main {
 }
 
 @media screen and (max-width: 1199.98px) {
-  .work-list--position {
+  .section--position {
     display: none;
   }
 }
@@ -1648,13 +1656,6 @@ main {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .projects {
-    padding-bottom: 94px;
-  }
 }
 
 .projects__item {
